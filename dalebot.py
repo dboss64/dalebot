@@ -39,12 +39,4 @@ async def nodale(ctx):
     role = discord.utils.get(author.server.roles, name="Looking for Games")
     await bot.remove_roles(author, role)
 
-@bot.command(pass_context=True)
-async def clear(ctx, amount=100):
-    channel = ctx.message.channel
-    messages = []
-    async for message in bot.logs_from(channel, limit=int(amount)):
-        messages.append(message)
-    await bot.delete_messages(messages)
-
-bot.run("NTE0MTU5NDc2MzUwMTI0MDUy.DtSi2g.21onVzX_sMW_bGFMhgpnRjFeQfY")
+bot.run("NTE0MTU5NDc2MzUwMTI0MDUy.DtUj6w.JzbnCy28EbPb5zMSpPm7dSa4ZZ0")
